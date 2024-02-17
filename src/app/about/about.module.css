@@ -1,5 +1,53 @@
-.imgContainer{
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+
+.title{
+    font-style: 46px;
+}
+.subtitle{
+color: var(--btn);
+}
+
+.desc{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.box h1{
+    color: var(--btn);
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgContainer {
     position: relative;
     width: 50%;
-    height: 500px;
-}
+    height: 435px;
+  }
+
+  .img{
+    object-fit: contain;
+  }
