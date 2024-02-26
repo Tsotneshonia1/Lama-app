@@ -36,25 +36,26 @@ function Links() {
         ))}
         <button className={styles.logout}>Logout</button>
       </div>
-      <button
+       {/* <button
         className={styles.menuButton}
         onClick={() => setOpen((prev) => !prev)}
-      ></button>
-      <Image
+       ></button> */}
+       <Image
         className={styles.menuButton}
         src="/menu.png"
         alt=""
         width={30}
         height={30}
         onClick={() => setOpen((prev) => !prev)}
-      />
-      {open && (
+       />
+       {open && (
         <div className={styles.mobileLinks}>
           {links.map((link) => (
             <Link href={link.url}>{link.title}</Link>
           ))}
         </div>
-      )}
+       )}
+    
     </div>
   );
 }
