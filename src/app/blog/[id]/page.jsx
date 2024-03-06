@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./id.module.css";
 import Image from "next/image";
 
+
+
 function SinglePostPage() {
   return (
     <main className={styles.container}>

@@ -1,8 +1,11 @@
+"use client"
+
 import React from "react";
 import styles from "./contact.module.css";
 import Image from "next/image";
 
 function Contact() {
+  console.log("It works here!")
   return (
     <main className={styles.container}>
       <div className={styles.imgContainer}>
@@ -20,7 +23,7 @@ function Contact() {
             rows="10"
             placeholder="Message"
           ></textarea>
-           <button>Send</button>
+          <button>Send</button>
         </form>
       </div>
     </main>
