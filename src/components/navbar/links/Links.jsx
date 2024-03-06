@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./links.module.css";
 import Image from "next/image";
+import DarkMode from "@/components/darkModeToggle/page";
 
 const links = [
   {
@@ -40,6 +41,7 @@ function Links() {
         className={styles.menuButton}
         onClick={() => setOpen((prev) => !prev)}
        ></button> */}
+       <DarkMode/>
        <Image
         className={styles.menuButton}
         src="/menu.png"
