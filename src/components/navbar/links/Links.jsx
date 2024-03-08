@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./links.module.css";
 import Image from "next/image";
-import DarkMode from "@/components/darkModeToggle/page";
+import DarkMode from "@/app/darkModeToggle/page";
 
 const links = [
   {
