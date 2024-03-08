@@ -8,9 +8,16 @@
     justify-content: space-between;
     padding: 2px;
     position: relative;
+    top: -28px;
+    right: 85px;
     cursor: pointer;
 
 }
+
+.icon{
+   height: 25px;
+}
+
 
 
 .ball{
