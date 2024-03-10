@@ -1,28 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./darkModeToggle.module.css";
+import { ThemeContext } from "@/components/context/ThemeContext";
+
 
 function DarkMode() {
-  const [light, setLight] = useState("left");
+ const {mode, toggle} = useContext(ThemeContext);
+ 
+
 
   return (
-    <main
-      className={styles.container}
-      onClick={() => {
-        if (light === "left") {
-          setLight("right");
-        }
-        else{
-          setLight("left")
-        }
-      }}
-    >
+    <main className={styles.container}  onClick={toggle}> 
       <div className={styles.icon}> 🔆</div>
       <div className={styles.icon}>🌙</div>
       <div
         className={styles.ball}
-        style={light === "right" ? { right: "2px" } : { left: "2px" }}
+        style={mode === "dark" ? {left: "2px"} : {right: "2px"}}
       />
     </main>
   );
